@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Red Hat";
+    src: url(assets/fonts/RedHatDisplay-Medium.ttf);
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Red Hat";
 }
 
 body{
@@ -13,26 +15,28 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: (224, 23%, 55%);
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat";
 }
 
 .container{
     width: 22em;
-    height: 30em;
+    height: 35em;
     border-radius: 1.3em;
-    background-color: aqua;
+    background-color: white;
     text-align: center;
 }
 
 #img-dance{
     width: 100%;
-    height: 33%;
+    height: 31%;
     border-radius: 1.3em 1.3em 0em 0em;
     margin-bottom: 1em;
 }
 
 h1{
     font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 
 #desc{
@@ -40,13 +44,23 @@ h1{
 }
 
 p, .cont-pay{
-    margin-top: 0.5em;
+    margin-top: 0.3em;
+}
+p{
+    color: hsl(224, 23%, 55%);
+}
+
+button{
+    margin-top: 1em;
+    border: none;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
 }
 
 .cont-pay{
     width: 70%;
-    height: 15%;
-    background-color: red;
+    height: 13%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -54,7 +68,16 @@ p, .cont-pay{
 }
 
 #pay-button{
-    
+    width: 70%;
+    border-radius: 1em;
+    background-color: hsl(245, 75%, 52%);
 }
 
-#cancel-button{}
+#cancel-button{
+    width: 70%;
+    color: hsl(224, 23%, 55%);
+}
+
+a:hover, #pay-button:hover, #cancel-button:hover{
+    cursor: pointer;
+}
